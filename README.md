@@ -26,7 +26,8 @@ root/
 ├── scripts/
 │   ├── textdata_generator.py
 │   ├── voicedata_generator.py
-│   └── mastersheet_generator.py
+│   ├── mastersheet_generator.py
+│   ├── ai4bharat_voice_generator.py
 ├── requirements.txt
 └── mastersheet.csv
 ```
@@ -61,6 +62,12 @@ Run the master sheet generator:
 python scripts/mastersheet_generator.py
 ```
 - This will create `mastersheet.csv` in the root folder, containing all sentences and their corresponding voice file paths for each language.
+
+
+## Voice Data Generation
+For generating voice datasets, I used **Google Text-to-Speech (gTTS)** for most supported Indian languages to generate `.mp3` voice data from text datasets but for languages not supported in gTTS (like **Assamese – `as`** and **Odia – `or`**), I used the **AI4Bharat Indic Parler TTS model**.
+
+The implementation is available at: `scripts/ai4bharat_voice_generator.py`
 
 ## Output
 - `data/<lang>/<lang>_textdata.csv`: Translated sentences for each language.
