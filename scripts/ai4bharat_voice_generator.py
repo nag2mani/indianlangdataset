@@ -1,3 +1,5 @@
+# Used this translator for the languages which is not supported in gTTS like "as" and "or".
+
 # Run this code in Kaggle notebook, create 4 code cell for these four steps and then run 1,2,3 then 4 cell.
 
 # STEP 1: Install dependencies
