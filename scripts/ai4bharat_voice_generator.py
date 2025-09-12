@@ -40,10 +40,10 @@ def generate_speech(text, description, out_path):
         )
         audio_arr = generation.cpu().numpy().squeeze()
         sf.write(out_path, audio_arr, model.config.sampling_rate)
-        print(f"✅ Saved {out_path}")
+        print(f"Saved {out_path}")
 
     except Exception as e:
-        print(f"❌ Error for: {text[:30]}... | {e}")
+        print(f"Error for: {text[:30]}... | {e}")
 
 
 # STEP 4: Generate for a CSV file (WAV only then convert it into mp3 if required).
