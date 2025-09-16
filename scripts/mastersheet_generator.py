@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-langs = ["bn","en","gu","hi","kn","ml","mr","ta","te","ur"]
+langs = ["bn","en","gu","hi","kn","ml","mr","ta","te","ur", "as", "or"]
 
 all_data = {}
 
